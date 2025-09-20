@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import AddVehicle from './pages/AddVehicle';
+import VehicleList from './pages/VehicleList';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
 
              {/* Vehicle Management */}
             <Route path="/add-vehicle" element={<AddVehicle />} />
-            {/* <Route path="/vehicles" element={<VehicleList />} /> */}
+            <Route path="/vehicles" element={<VehicleList />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
