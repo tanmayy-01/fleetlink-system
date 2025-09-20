@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import AddVehicle from './pages/AddVehicle';
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
         <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Routes>
             <Route path="/" element={<Home />} />
+
+             {/* Vehicle Management */}
+            <Route path="/add-vehicle" element={<AddVehicle />} />
+            {/* <Route path="/vehicles" element={<VehicleList />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

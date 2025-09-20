@@ -88,7 +88,7 @@ const Home = () => {
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
           <KeyFeature
             icon={<Clock className="h-5 w-5" />}
             title="Real-time Availability"
@@ -123,7 +123,7 @@ const Home = () => {
           </h2>
         </div>
         
-        <div className="space-y-6">
+        <div className="mt-10 space-y-6">
           <StepCard
             step={1}
             title="Add Your Vehicles"
