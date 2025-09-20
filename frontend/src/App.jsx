@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import AddVehicle from './pages/AddVehicle';
 import VehicleList from './pages/VehicleList';
+import SearchBooking from './pages/SearchBooking';
+import BookingHistory from './pages/BookingHistory';
 
 function App() {
   return (
@@ -22,6 +24,11 @@ function App() {
              {/* Vehicle Management */}
             <Route path="/add-vehicle" element={<AddVehicle />} />
             <Route path="/vehicles" element={<VehicleList />} />
+
+             {/* Booking System */}
+            <Route path="/search-book" element={<SearchBooking />} />
+            <Route path="/bookings" element={<BookingHistory />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

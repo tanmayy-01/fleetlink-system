@@ -78,6 +78,7 @@ export const isDateInFuture = (date) => {
     const dateObj = typeof date === 'string' ? parseISO(date) : date;
     return isValid(dateObj) && isFuture(dateObj);
   } catch (error) {
+    console.error(error)
     return false;
   }
 };
@@ -129,6 +130,7 @@ export const calculateRideDuration = (fromPincode, toPincode) => {
     const duration = Math.abs(from - to) % 24;
     return Math.max(duration, 1);
   } catch (error) {
+    console.error(error)
     return 2; // Default 2 hours
   }
 };
