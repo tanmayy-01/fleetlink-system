@@ -7,7 +7,7 @@ import axios from 'axios';
 
 // Create axios instance with base configuration
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: import.meta.env.VITE_BASE_API_URL || 'http://localhost:1234/api',
   timeout: 10000, // 10 seconds timeout
   headers: {
     'Content-Type': 'application/json',
@@ -23,13 +23,7 @@ api.interceptors.request.use(
       _t: Date.now(),
     };
     
-    // Log request in development
-    if (import.meta.env.DEV) {
-      console.log(`🚀 API Request: ${config.method?.toUpperCase()} ${config.url}`, {
-        params: config.params,
-        data: config.data,
-      });
-    }
+   
     
     return config;
   },
@@ -42,10 +36,7 @@ api.interceptors.request.use(
 // Response interceptor - Handle responses and errors
 api.interceptors.response.use(
   (response) => {
-    // Log successful response in development
-    if (import.meta.env.DEV) {
-      console.log(`✅ API Response: ${response.config.method?.toUpperCase()} ${response.config.url}`, response.data);
-    }
+  
     
     return response;
   },
