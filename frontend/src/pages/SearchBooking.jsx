@@ -495,7 +495,7 @@ const SearchBooking = () => {
 
       {/* Selected Vehicle Details */}
       {selectedVehicle && (
-        <div className="card border-2 border-primary-200 bg-primary-50">
+        <div className="p-10 card border-2 border-primary-200 bg-primary-50">
           <div className="card-header border-primary-200">
             <h2 className="text-xl font-semibold text-primary-900">Selected Vehicle Details</h2>
           </div>

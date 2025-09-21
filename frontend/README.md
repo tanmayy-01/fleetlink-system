@@ -92,3 +92,19 @@ A modern React frontend application for managing logistics vehicle bookings with
 - **VehicleCard**: Reusable vehicle display component
 - **LoadingSpinner**: Loading state indicators
 - **ToastNotifications**: User feedback system
+
+## Screenshots
+
+### Home Page
+![Home Page](./src/assets/home.png)
+
+### Add Vehicle Page
+![Add Vehicle](./src/assets/add-vehicle.png)
+
+### Vehicle List Page
+![Vehicle List](./src/assets/vehicle-list.png)
+
+### Book Vehicle Page
+![Book Vehicle 1](./src/assets/book-vehicle-1.png)
+
+![Book Vehicle 2](./src/assets/book-vehicle-2.png)
