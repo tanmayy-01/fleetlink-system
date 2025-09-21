@@ -147,29 +147,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Quick Stats Section (Optional - for demonstration) */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <StatCard
-          title="Fleet Vehicles"
-          value="24"
-          subtitle="Active vehicles"
-          color="bg-primary-50 text-primary-600"
-        />
-        
-        <StatCard
-          title="Total Bookings"
-          value="156"
-          subtitle="Successful bookings"
-          color="bg-success-50 text-success-600"
-        />
-        
-        <StatCard
-          title="Avg. Duration"
-          value="4.5h"
-          subtitle="Per booking"
-          color="bg-warning-50 text-warning-600"
-        />
-      </div>
     </div>
   );
 };
