@@ -9,13 +9,12 @@ A modern React frontend application for managing logistics vehicle bookings with
 - **Smart Search**: Search available vehicles with real-time filtering
 - **Booking System**: Book vehicles with confirmation and status tracking
 - **Real-time Updates**: Live availability updates and notifications
-- **Mobile Responsive**: Optimized for all device sizes
 - **Error Handling**: User-friendly error messages and recovery
 - **Toast Notifications**: Real-time feedback for user actions
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React 18 with Hooks
+- **Framework**: React 19 with Hooks
 - **Build Tool**: Vite for fast development and building
 - **Styling**: Tailwind CSS for utility-first styling
 - **Routing**: React Router DOM for navigation
@@ -30,7 +29,6 @@ A modern React frontend application for managing logistics vehicle bookings with
 
 - Node.js (v16 or higher)
 - npm or yarn
-- Running backend API (see `/backend/README.md`)
 
 ### Setup Steps
 
